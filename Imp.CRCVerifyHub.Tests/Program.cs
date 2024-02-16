@@ -32,8 +32,6 @@ namespace Imp.CRCVerifyHub.Tests
             Array.ForEach(buffer, b => Console.Write($"{b:X2} "));
             Console.WriteLine($" CHECKSUN -> {Crc16.Services.ChecksumGenerator(Crc16.Crc16Algorithm.Ccitt, buffer).ToString("X2").Insert(2, " ")}");
 
-            Console.ReadKey();
-
 
             Console.WriteLine("");
             Console.WriteLine("TESTE 3 CHECKSUN -> 1B D3");
