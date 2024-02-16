@@ -1,4 +1,6 @@
-CRC significa "Cyclic Redundancy Check" (Verificação de Redundância Cíclica, em português) e é um algoritmo utilizado para detecção de erros em transmissões de dados. O objetivo principal do CRC é garantir a integridade dos dados durante a comunicação, identificando se houve algum erro na transmissão.
+CRC significa "Cyclic Redundancy Check" (Verificação de Redundância Cíclica, em português) 
+
+Um algoritmo utilizado para detecção de erros em transmissões de dados. O objetivo principal do CRC é garantir a integridade dos dados durante a comunicação, identificando se houve algum erro na transmissão.
 
 O funcionamento básico do CRC envolve a geração de um valor de verificação (checksum) com base nos dados transmitidos. Este valor de verificação é anexado aos dados e enviado juntamente com eles. No receptor, o valor de verificação é recalculado com base nos dados recebidos. Se o valor de verificação calculado não coincidir com o valor de verificação recebido, isso indica que os dados podem ter sido corrompidos durante a transmissão.
 
