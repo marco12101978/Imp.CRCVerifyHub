@@ -33,9 +33,9 @@ namespace Imp.CRCVerifyHub.Crc16
         /// <param name="algorithm">O algoritmo CRC 16 a ser usado</param>
         /// <param name="bytes">O buffer para calcular o CRC</param>
         /// <returns>O CRC especificado</returns>
-        public static ushort crcChecksumGenerator(Crc16Algorithm algorithm, params byte[] bytes)
+        public static ushort ChecksumGenerator(Crc16Algorithm algorithm, params byte[] bytes)
         {
-            return crcChecksumGenerator(algorithm, bytes, 0, bytes?.Length ?? 0);
+            return ChecksumGenerator(algorithm, bytes, 0, bytes?.Length ?? 0);
         }
 
         /// <summary>
@@ -46,7 +46,7 @@ namespace Imp.CRCVerifyHub.Crc16
         /// <param name="start">O índice inicial no qual calcular o CRC</param>
         /// <param name="length">O comprimento do buffer no qual calcular o CRC</param>
         /// <returns>O CRC especificado</returns>
-        public static ushort crcChecksumGenerator(Crc16Algorithm algorithm, byte[] bytes, int start, int length)
+        public static ushort ChecksumGenerator(Crc16Algorithm algorithm, byte[] bytes, int start, int length)
         {
             switch (algorithm)
             {
