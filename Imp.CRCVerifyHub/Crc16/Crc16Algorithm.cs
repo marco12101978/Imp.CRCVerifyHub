@@ -24,7 +24,7 @@ SOFTWARE.
 
 */
 
-namespace Imp.CRCVerifyHub
+namespace Imp.CRCVerifyHub.Crc16
 {
     public enum Crc16Algorithm
     {

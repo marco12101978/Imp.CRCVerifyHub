@@ -39,12 +39,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Crc16.cs" />
-    <Compile Include="Crc16Algorithm.cs" />
-    <Compile Include="Crc32.cs" />
-    <Compile Include="Crc8.cs" />
+    <Compile Include="Crc16\Ccitt_Base.cs" />
+    <Compile Include="Crc16\Ccitt_Initial_0X1D0F.cs" />
+    <Compile Include="Crc16\Ccitt_Initial_0XFfff.cs" />
+    <Compile Include="Crc16\Ccitt_Initial_Zero.cs" />
+    <Compile Include="Crc16\CcittKermit.cs" />
+    <Compile Include="Crc16\Crc16Algorithm.cs" />
+    <Compile Include="Crc16\DnpCrc16.cs" />
+    <Compile Include="Crc16\Services.cs" />
+    <Compile Include="Crc16\StandardCrc16.cs" />
+    <Compile Include="Crc16\UnknownAlgorithmException.cs" />
+    <Compile Include="Crc32\Services.cs" />
+    <Compile Include="Crc8\Services.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UnknownAlgorithmException.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
